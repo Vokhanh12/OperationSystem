@@ -26,7 +26,7 @@ func (tg TamGiac) TinhDienTich() float64 {
 
 	// Kiểm tra xem tam giác có hợp lệ không
 	if tg.A <= 0 || tg.B <= 0 || tg.C <= 0 || (tg.A+tg.B <= tg.C) || (tg.A+tg.C <= tg.B) || (tg.B+tg.C <= tg.A) {
-		return 0 // Trả về 0 nếu tam giác không hợp lệ
+		return -1 // Trả về -1 nếu tam giác không hợp lệ
 	}
 
 	// Tính toán diện tích bằng công thức Heron
